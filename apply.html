@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Circus Application</title>
+</head>
+<body>
+<header>
+  <h1>Application</h1>
+  <a href="./index.html">Back To Home</a>
+</header>
+<main>
+  <form name="circus" id="circus-app">
+    <section>
+      <h2>Fill out info to best of your ability.</h2>
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+      </p>
+
+      <p>
+        <label for="position">Positions Available:</label>
+        <select id="position" name="position">
+          <option hidden disabled selected>Select a Position</option>
+          <option value="fire-breather-eater">Fire Breather-Eater</option>
+          <option value="web-developer">Web Developer</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="peanuts">How allergic are you to peanuts?</label>
+        <input type="range" name="peanuts" id="peanuts" min="0" max="12">
+        <span id="peanut-display">6</span>
+      </p>
+
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>Do you like elephants?</legend>
+        <label for="yes">Yes</label>
+        <input type="radio" name="elephants" id="yes" value="yes">
+
+        <label for="no">No</label>
+        <input type="radio" name="elephants" id="no" value="no">
+
+        <h4>Favorite Tiger Names</h4>
+        <label for="tony">Tony</label>
+        <input name="tiger" for="tony" value="tony" type="checkbox" id="tony">
+
+        <label for="tigger">Tigger</label>
+        <input name="tiger" for="tigger" value="tigger" type="checkbox" id="tigger">
+
+        <label for="sally">Sally</label>
+        <input name="tiger" for="sally" value="sally" type="checkbox" id="sally">
+
+        <label for="frank">Frank</label>
+        <input name="tiger" for="frank" value="frank" type="checkbox" id="frank">
+      </fieldset>
+    </section>
+    <section>
+      <button>Circus Me Bro!</button>
+    </section>
+  </form>
+</main>
+<footer>Footer</footer>
+<script type="module" src="./src/apply.js"></script>
+</body>
+</html>
